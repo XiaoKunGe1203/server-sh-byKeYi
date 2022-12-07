@@ -55,8 +55,6 @@ echo -----------------
 wget https://download.oracle.com/java/17/archive/jdk-17.0.5_linux-x64_bin.tar.gz
 tar -zxvf jdk-17.0.5_linux-x64_bin.tar.gz
 
-wget https://keyi.mcsh.pages.dev/keyi/start.sh
 cd /
 wget https://mcsh.pages.dev/keyi/mc.sh
-clear
 sudo sh /mc.sh
