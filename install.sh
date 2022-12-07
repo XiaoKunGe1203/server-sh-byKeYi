@@ -1,4 +1,5 @@
 #bin/bash
+cd /opt/
 
 echo -------------------------------
 echo 欢迎使用一键开服脚本
@@ -53,13 +54,9 @@ echo 安装甲骨文jdk17
 echo -----------------
 wget https://download.oracle.com/java/17/archive/jdk-17.0.5_linux-x64_bin.tar.gz
 tar -zxvf jdk-17.0.5_linux-x64_bin.tar.gz
+
+wget https://keyi.mcsh.pages.dev/keyi/start.sh
+cd /
+wget https://mcsh.pages.dev/keyi/mc.sh
 clear
-echo --------------
-echo 启动服务端中
-echo ---------------
-
-jdk-17.0.5/bin/java -jar keyi-main-1.19.2-18.jar
-
-echo ---------------------
-echo 服务端已关闭
-echo ------------------------
+sudo sh /mc.sh
