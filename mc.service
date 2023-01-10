@@ -1,0 +1,13 @@
+[Unit]
+#服务描述
+Description=mc service 
+After=network.target syslog.target
+Wants=network.target
+
+[Service]
+Type=simple
+#执行命令 
+ExecStart=sh /mc.sh
+
+[Install]
+WantedBy=multi-user.target
